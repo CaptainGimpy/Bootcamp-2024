@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* general margin and padding reset */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* makes the blue box 500px by 300px */
+    .blue-box {
+      position: relative;
+      /* makes box relative to default start position */
+
+      margin-left: 200px;
+      /* moves box to the right by 200px */
+      margin-top: 200px;
+      /* moves box down by 200px */
+      height: 300px;
+      /* makes the height of the box 500px */
+      width: 500px;
+      /* makes the width of the box 500px */
+      background-color: blue;
+      border: 10px outset black;
+    }
+
+    .red-circle {
+      position: absolute;
+      top: 150px;
+      /* moves the red circle down by 150px, in relation to top of blue box */
+      left: 250px;
+      /* moves the red circle to the right by 150px, in relation to left side of blue box */
+      height: 200px;
+      /* makes the height of red circle 150px */
+      width: 150px;
+      /* makes the width of red circle 150px */
+      background-color: red;
+      border-radius: 50%;
+      /* makes the red circle a circle */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+#red {
+    color: red;
+}
+
+#orange {
+    color: orange;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#green {
+    color: green;
+}
+
+#blue {
+    color: blue;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+* {
+    background-color: lightgrey;
+}
+
+.color-title {
+    font-weight: normal;
+}
