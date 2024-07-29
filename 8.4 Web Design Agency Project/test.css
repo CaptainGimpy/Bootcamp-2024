@@ -1,0 +1,60 @@
+/* style.css */
+
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main {
+    width: 100%;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 40px);
+    /* Adjust the width of each card */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: calc(33.333% - 40px);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.tile-image {
+    width: 100%;
+    /* Ensures the image inside the card scales properly */
+    height: auto;
+    max-width: 100%;
+    /* Added to ensure the image does not exceed the container width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+    .card {
+        flex: 1 1 calc(50% - 40px);
+        /* Two cards per row */
+    }
+}
+
+@media (max-width: 720px) {
+    .card {
+        flex: 1 1 100%;
+        /* Full-width cards on very small screens */
+    }
+}
